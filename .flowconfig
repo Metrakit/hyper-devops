@@ -1,0 +1,14 @@
+[ignore]
+
+[include]
+
+[libs]
+flow-typed
+
+[lints]
+
+[options]
+esproposal.decorators=ignore
+esproposal.optional_chaining=enable
+
+[strict]

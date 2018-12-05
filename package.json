@@ -1,0 +1,66 @@
+{
+  "name": "hyper-devops",
+  "version": "1.0.0",
+  "description": "Add some usefull Devops features to your favourite terminal",
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
+  "scripts": {
+    "flow-typed": "rimraf flow-typed/npm && flow-typed install --overwrite || true",
+    "dev": "NODE_ENV=development webpack --watch --mode development",
+    "build": "NODE_ENV=production webpack --mode production",
+    "prepublish": "rm -rf ./dist && yarn build"
+  },
+  "keywords": [
+    "hyper",
+    "hyper.app",
+    "hyper-plugin",
+    "cli",
+    "devops"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:Metrakit/hyper-devops.git"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-regular-svg-icons": "^5.5.0",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.10",
+    "react": "^16.4.2",
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.0.7",
+    "react-select": "^2.1.2",
+    "react-values": "^0.2.4",
+    "read-package-json": "^2.0.13",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.55",
+    "@babel/plugin-proposal-do-expressions": "^7.0.0-beta.55",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.55",
+    "@babel/runtime": "^7.0.0-beta.55",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.0-beta.4",
+    "babel-preset-react-app": "^4.0.0-next.66cc7a90",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
+    "flow-bin": "^0.77.0",
+    "flow-typed": "^2.5.1",
+    "immutable": "^3.8.2",
+    "react": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
